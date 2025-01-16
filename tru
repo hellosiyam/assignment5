@@ -1,0 +1,8 @@
+<div class="md:max-w-md lg:max-w-[690px]">
+                        <h1 class="leading-normal lg:leading-normal text-3xl font-semibold lg:text-6xl lg:font-bold">End-to-End Travel with <br>
+                            <span class="text-[#1DD100]">P Paribahan</span></h1>
+                        <p class="mb-5 lg:mb-8">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                        </p>
+                        <button class="btn btn-primary bg-[#1DD100] text-[#030712] border-none lg:h-16 lg:w-44 lg:text-xl lg:font-bold">Buy Tickets</button>
+                    </div>
