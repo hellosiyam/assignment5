@@ -66,7 +66,7 @@
                         <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with  </h1>
                         <h1 class="text-5xl text-[#1DD100] font-bold font-raleway"> P Paribahan</h1>
                         <p class="mb-5 lg:max-w-md">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                        <button class="btn bg-[#1DD100] border-0 px-6 font-bold">Buy Tickets</button>
+                        <button onclick="buyTicket()" id="buy-ticket-btn" class="btn bg-[#1DD100] border-0 px-6 font-bold">Buy Tickets</button>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
             </div>
         </section>
          <!-- Ticket_counter -->
-        <section class=" rounded-t-3xl lg:rounded-t-[88px] border-t-2 border-[#1DD100] bg-[#F7F8F8] lg:max-h-full mt-10 container mx-auto px-4 md:px-6 lg:px-32">
+        <section id="ticket-counter-section" class=" rounded-t-3xl lg:rounded-t-[88px] border-t-2 border-[#1DD100] bg-[#F7F8F8] lg:max-h-full mt-10 container mx-auto px-4 md:px-6 lg:px-32">
             <!-- Tittle-tittle -->
             <div class="font-raleway mx-auto flex flex-col text-center py-4 lg:py-[80px] lg:w-[736px]">
             <h1 class=" font-bold text-3xl lg:text-4xl ">MX-Paribahan</h1>
@@ -217,120 +217,120 @@
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center ">
                                     <div class="flex text-center  w-4 lg:w-10">A</div>
-                                    <p id="a1" class=" h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">A1</p>
-                                    <p id="a2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">A2</p>
+                                    <p id="a1" class=" h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">A1</p>
+                                    <p id="a2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">A2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto ">
-                                    <p id="a3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl  flex text-center items-center justify-center">A3</p>
-                                    <p id="a4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl  flex text-center items-center justify-center">A4</p>
+                                    <p id="a3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl  flex text-center items-center justify-center">A3</p>
+                                    <p id="a4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl  flex text-center items-center justify-center">A4</p>
                                 </div>
                             </div>
                             <!-- set-saetion B -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">B</div>
-                                    <p id="b1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">B1</p>
-                                    <p id="b2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">B2</p>
+                                    <p id="b1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">B1</p>
+                                    <p id="b2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">B2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="b3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">B3</p>
-                                    <p id="b4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">B4</p>
+                                    <p id="b3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">B3</p>
+                                    <p id="b4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">B4</p>
                                 </div>
                             </div>
                             <!-- set-saetion C -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">C</div>
-                                    <p id="c1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">C1</p>
-                                    <p id="c2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">C2</p>
+                                    <p id="c1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">C1</p>
+                                    <p id="c2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">C2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="c3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">C3</p>
-                                    <p id="c4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">C4</p>
+                                    <p id="c3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">C3</p>
+                                    <p id="c4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">C4</p>
                                 </div>
                             </div>
                             <!-- set-saetion D -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">D</div>
-                                    <p id="d1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">D1</p>
-                                    <p id="d2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">D2</p>
+                                    <p id="d1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">D1</p>
+                                    <p id="d2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">D2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="d3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">D3</p>
-                                    <p id="d4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">D4</p>
+                                    <p id="d3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">D3</p>
+                                    <p id="d4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">D4</p>
                                 </div>
                             </div>
                             <!-- set-saetion E -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">E</div>
-                                    <p id="e1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">E1</p>
-                                    <p id="e2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">E2</p>
+                                    <p id="e1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">E1</p>
+                                    <p id="e2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">E2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="e3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">E3</p>
-                                    <p id="e4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">E4</p>
+                                    <p id="e3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">E3</p>
+                                    <p id="e4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">E4</p>
                                 </div>
                             </div>
                             <!-- set-saetion F -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">F</div>
-                                    <p id="f3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">F1</p>
-                                    <p id="f4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">F2</p>
+                                    <p id="f3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">F1</p>
+                                    <p id="f4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">F2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="f3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">F3</p>
-                                    <p id="f4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">F4</p>
+                                    <p id="f3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">F3</p>
+                                    <p id="f4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">F4</p>
                                 </div>
                             </div>
                             <!-- set-saetion G -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">G</div>
-                                    <p id="g1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">G1</p>
-                                    <p id="g2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">G2</p>
+                                    <p id="g1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">G1</p>
+                                    <p id="g2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">G2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="g3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">G3</p>
-                                    <p id="g4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">G4</p>
+                                    <p id="g3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">G3</p>
+                                    <p id="g4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">G4</p>
                                 </div>
                             </div>
                             <!-- set-saetion H -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">H</div>
-                                    <p id="h1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">H1</p>
-                                    <p id="h2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">H2</p>
+                                    <p id="h1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">H1</p>
+                                    <p id="h2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">H2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="h3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">H3</p>
-                                    <p id="h4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">H4</p>
+                                    <p id="h3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">H3</p>
+                                    <p id="h4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">H4</p>
                                 </div>
                             </div>
                             <!-- set-saetion I -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">I</div>
-                                    <p id="i1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">I1</p>
-                                    <p id="i2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">I2</p>
+                                    <p id="i1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">I1</p>
+                                    <p id="i2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">I2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="i3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">I3</p>
-                                    <p id="i4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">I4</p>
+                                    <p id="i3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">I3</p>
+                                    <p id="i4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">I4</p>
                                 </div>
                             </div>
                             <!-- set-saetion J -->
                             <div class="flex flex-row justify-between font-inter">
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto items-center">
                                     <div class="flex text-center  w-4 lg:w-10">J</div>
-                                    <p id="j1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">J1</p>
-                                    <p id="j2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">J2</p>
+                                    <p id="j1" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">J1</p>
+                                    <p id="j2" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">J2</p>
                                 </div>
                                 <div class="flex flex-row gap-2 lg:gap-6 w-auto">
-                                    <p id="j3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">J3</p>
-                                    <p id="j4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#1DD100] rounded-xl flex text-center items-center justify-center">J4</p>
+                                    <p id="j3" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">J3</p>
+                                    <p id="j4" class="h-10 w-16 lg:h-14 lg:w-28 bg-[#F7F8F8] rounded-xl flex text-center items-center justify-center">J4</p>
                                 </div>
                             </div>
                         </div>
@@ -435,6 +435,8 @@
             </div>
          </div>
     </footer>
+    <script src="js/utlity.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
