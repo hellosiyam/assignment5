@@ -1,10 +1,4 @@
 // Hero-section to Teckite buy section function
-// function ticketPage(elements) {
-//     const element = document.getElementById(elements);
-//     element.scrollIntoView({
-//         behavior : 'smooth'
-//     })
-// }
 document.getElementById('buy-ticket-btn').addEventListener('click', function () {
     const element = document.getElementById('ticket-counter-section');
     element.scrollIntoView({
@@ -107,6 +101,8 @@ document.getElementById('continue_btn').addEventListener('click', function () {
     numberInput.value = ''
     seatArea = []
     updateSeatInfo()
+    btnElement.setAttribute('disabled', 'true');
+
     for (const seat of seats) {
         seat.classList.remove('bg-green-400', 'text-white')
     }

@@ -6,3 +6,6 @@
 .font-inter{
     font-family: "Inter", serif;
 }
+body{
+    scroll-behavior: smooth;
+}
