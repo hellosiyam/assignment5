@@ -45,6 +45,7 @@ for (let i = 0; i < seats.length; i++) {
 
 }
 
+// cuppon-Code section:
 document.getElementById("c_btn").addEventListener('click', function () {
     const inputValue = document.getElementById("c_value").value
     if (inputValue.toUpperCase() === "NEW15" && seatArea.length === 3) {
@@ -55,10 +56,10 @@ document.getElementById("c_btn").addEventListener('click', function () {
 })
 
 // Get elements
-const btnElement = document.getElementById('next_btn');
 const nameInput = document.getElementById('name');
 const numberInput = document.getElementById('number');
 const emailInput = document.getElementById('email');
+const btnElement = document.getElementById('next_btn');
 
 // Function to check input validity and enable/disable button
 function validateInputs() {
@@ -119,7 +120,7 @@ function updateSeatInfo() {
         document.getElementById("c_btn").setAttribute('disabled', 'true')
     }
     const seatListContainer = document.getElementById("seat_list");
-    seatListContainer.innerHTML = "";
+    seatListContainer.innerHTML = ""; //why?
     for (const seat of seatArea) {
         const seatRow = document.createElement("div");
         seatRow.className = "flex flex-row justify-between";
